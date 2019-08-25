@@ -40,7 +40,8 @@ public class UpdateFifaLaws extends AppCompatActivity implements View.OnClickLis
     public ProgressDialog mProgressDialog;
     private Button btnLawImage, Submit, delete;
     private EditText title, subtitle, video, details, audio, law_no;
-    private String mtitle, msub_title, mvideo, mdetails, mimage,mlaw_no;
+    private String mtitle, msub_title, mvideo, mdetails, mimage;
+    private int mlaw_no;
     private ImageView lawImage;
     private FirebaseDatabase mfirebaseDatabase;
     private DatabaseReference mref;
@@ -91,7 +92,7 @@ public class UpdateFifaLaws extends AppCompatActivity implements View.OnClickLis
            // lawImage.setTe getIntent().getStringExtra("image");
             video.setText(getIntent().getStringExtra("video"));
             details.setText(getIntent().getStringExtra("details"));
-            law_no.setText(getIntent().getStringExtra("law_no"));
+            law_no.setText( String.valueOf(getIntent().getIntExtra("law_no",0)));
 
 
             GlideApp.with(UpdateFifaLaws.this)

@@ -60,16 +60,15 @@ class Laws_Database  {
         this.detail = detail;
     }
 
-    public Integer getLaw_no() {
+    public int getLaw_no() {
         return law_no;
     }
 
-    public void setLaw_no(Integer law_no) {
+    public void setLaw_no(int law_no) {
         this.law_no = law_no;
     }
 
-
-    public Laws_Database(String title, String sub_title, String img, String audio, String video, String detail, Integer law_no) {
+    public Laws_Database(String title, String sub_title, String img, String audio, String video, String detail, int law_no) {
         this.title = title;
         this.sub_title = sub_title;
         this.img = img;

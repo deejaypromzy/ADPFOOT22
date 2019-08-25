@@ -114,7 +114,7 @@ public class AddLaw extends Fragment implements View.OnClickListener {
                                         uri.toString(),
                                         "",
                                         video.getText().toString(),
-                                        details.getText().toString()
+                                        details.getText().toString(),5
                                 );
                                 Toast.makeText(getContext(), resultUri.toString(), Toast.LENGTH_SHORT).show();
 

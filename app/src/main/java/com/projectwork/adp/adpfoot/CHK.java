@@ -145,7 +145,7 @@ details.setText(mdetails);
                                         uri.toString(),
                                         "",
                                         video.getText().toString(),
-                                        details.getText().toString()
+                                        details.getText().toString(),5
                                 );
                                 mref.child("ADP").child("laws").child(title.getText().toString()).setValue(dbUser);
                             }
